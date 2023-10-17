@@ -1,6 +1,8 @@
 def isprime(n):
-    for v in range(1,n,1):
-        if n%v == 0:
+    if n == 1:
+            return False
+    for v in range(2,n):
+        if n%v == 0 and n!=1:
             return False
     return True
 
